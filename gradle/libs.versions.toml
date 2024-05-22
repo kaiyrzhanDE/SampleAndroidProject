@@ -1,0 +1,47 @@
+[versions]
+
+#main
+androidx-core-ktx = "1.13.1"
+androidx-lifecycle-runtime-ktx = "2.7.0"
+kotlin-compiler-extension = "1.5.5"
+
+#plugins
+android-application = "8.2.2"
+android-kotlin = "1.9.20"
+
+#gradle
+android-gradle-plugin = "8.0.2"
+kotlin-gradle-plugin = "1.8.21"
+
+#test
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+androidx-test-espresso-core = "3.5.1"
+appcompat = "1.6.1"
+
+[libraries]
+
+#main
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle-runtime-ktx" }
+
+#gradle
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+
+#test
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-test-espresso-core" }
+
+#debug-test
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+[plugins]
+
+#main
+com-android-application = { id = "com.android.application", version.ref = "android-application" }
+com-android-library = { id = "com.android.library", version.ref = "android-application" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "android-kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "android-kotlin" }
+java-library = { id = "java-library", version.ref = "android-kotlin" }
